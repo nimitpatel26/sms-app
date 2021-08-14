@@ -16,7 +16,7 @@
     font-family: Arial;
 }
 
-.App label, .App Button{
+.App label, .App Button, .App select{
     font-size: large;
     display: inline-block;
     text-align: right;
