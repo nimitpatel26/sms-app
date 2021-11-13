@@ -1,5 +1,6 @@
 const handler = async (event) => {
     try {
+        return {statusCode: 301, body: "SMS API is disabled permanently!"}
 
         let num = event.queryStringParameters.num
         let language = event.queryStringParameters.language || 'en'

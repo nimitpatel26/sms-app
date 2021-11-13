@@ -22,22 +22,25 @@ class App extends React.Component {
     async formSubmitted(e) {
         e.preventDefault()
         this.setState({
-            status: "Sending....",
+            status: "SMS API is disabled. You can look at the source code at https://github.com/nimitpatel26/sms-app",
         })
-
-        let url = "/.netlify/functions/send-sms?num=" + this.state.number + "&language=" + this.state.language + "&subject=" + this.state.subject + "&message=" + this.state.message
-
-        let resp = await fetch(url);
-
-        if (resp.status === 200) {
-            this.setState({
-                status: "Sent!",
-            })
-        } else {
-            this.setState({
-                status: "Failed to send SMS!",
-            })
-        }
+        // this.setState({
+        //     status: "Sending....",
+        // })
+        //
+        // let url = "/.netlify/functions/send-sms?num=" + this.state.number + "&language=" + this.state.language + "&subject=" + this.state.subject + "&message=" + this.state.message
+        //
+        // let resp = await fetch(url);
+        //
+        // if (resp.status === 200) {
+        //     this.setState({
+        //         status: "Sent!",
+        //     })
+        // } else {
+        //     this.setState({
+        //         status: "Failed to send SMS!",
+        //     })
+        // }
 
     }
 
