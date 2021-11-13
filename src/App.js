@@ -22,7 +22,7 @@ class App extends React.Component {
     async formSubmitted(e) {
         e.preventDefault()
         this.setState({
-            status: "SMS API is disabled. You can look at the source code at https://github.com/nimitpatel26/sms-app",
+            status: "SMS sending is disabled. You can look at the source code at https://github.com/nimitpatel26/sms-app",
         })
         // this.setState({
         //     status: "Sending....",
